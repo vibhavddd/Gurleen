@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#020f30">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Happy Birthday </title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Roboto:400,500,300&display=swap" rel="stylesheet">
+    <link href="segoeuii.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <link href="swing.css" rel="stylesheet">
+    <link href="farewell.css" rel="stylesheet">
+</head>
+<body>
+    <!--<div class="small-yellow-rectangle"></div>
+    <div class="big-lightblue-rectangle"></div> -->
+    <div class="wrapper">
+        <div class="left-box">
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+            <div class="circle1 circle"></div>
+            <div class="circle5 circle"></div>
+            <div class="circle6 circle"></div>
+            <div id="left-bottom-graphic"><img src="left-bottom-graphic.svg"></div>
+            <div class="circle left-top-graphic">
+                <div class="farewell">Happy</div>
+                <div class="farewell year">Birthday!</div>
+            </div>
+            <div class="place-date">
+                <div class="date-day">
+                    <div class="date">April 2</div>
+                    <div class="day">Sunday</div>
+                </div>
+                <div class="place">
+                    Gurleen Kaur
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+        </div>
+    </div>
+    <div class="photo-booth">
+        <div class="left-arrow">
+            <div>
+                <img src="assets/caret-left-solid.svg" style="height: 40px; width: 30px; cursor: pointer;" onclick="plusSlides(-1)">
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fadeIn">
+                <img src="assets/tushar-goel.jpeg" style="height: 100%; width: 100%;">
+            </div>
+            <div class="name-dep fadeIn">
+                <div class="name fittext">
+                    Gurleen Kaur
+                </div>
+                <div class="dep">
+                    The person who supported me in my hard times.
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fadeIn">
+                <img src="assets/2.jpeg" style="height: 100%; width: 100%;">
+            </div>
+            <div class="name-dep fadeIn">
+                <div class="name fittext">
+                    Memories
+                    
+                </div>
+               <div class="dep">
+                    Memories! 
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fadeIn">
+                <img src="assets/3.jpeg" style="height: 100%; width: 100%;">
+            </div>
+            <div class="name-dep fadeIn">
+                <div class="name fittext">
+                    Memories
+                </div>
+               <div class="dep">
+                    Still remember those bhangra steps!
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fadeIn">
+                <img src="assets/4.jpeg" style="height: 100%; width: 100%;">
+            </div>
+            <div class="name-dep fadeIn">
+                <div class="name fittext">
+                    LSR Economics 2019 
+                </div>                  
+                 <div class="dep">
+                    Investment Banker
+                </div>
+            </div>
+        </div>
+        <div class="card swing">
+            <div class="image fadeIn">
+                <img src="assets/5.jpeg" style="height: 100%; width: 100%;">
+            </div>
+            <div class="name-dep fadeIn">
+                <div class="name fittext">
+                    Topper 
+                </div>
+                <div class="dep">
+                    Tips dedo ploxx 
+                </div>
+            </div>
+        </div>
+            
+
+        <div class="right-arrow">
+            <div>
+                <img src="assets/caret-left-solid.svg" style="transform: rotate(180deg);cursor: pointer;height: 40px; width: 30px" onclick="plusSlides(1)">
+            </div>
+        </div>
+    </div>
+    <script src="fittext.js"></script>
+	<script type="text/javascript">
+	  fitText(document.getElementsByClassName('fittext'), 0.9)
+	</script>
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("card");
+              //var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+              
+            }
+            </script>
+
+</body>
+</html>
